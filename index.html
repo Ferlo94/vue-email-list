@@ -13,9 +13,9 @@
     </head>
     <body>
         <div id="app">
-
-            <h1>{{mails}}</h1>
-
+            <ol>
+                <li v-for="mail in mails" v-show="mails.length == 10">{{mail}}</li>
+            </ol>
         </div>
         <script src="script.js"></script>
     </body>
